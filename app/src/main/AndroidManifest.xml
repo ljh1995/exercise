@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.ljh_project">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    /** permission **/
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_lanucher"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/SampleTheme">
+        <activity android:name=".ui.LoadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ZhuCeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MenuActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.My_danwei_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.My_us_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SheZhi_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Personal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.About_us_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FoodInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NewsInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SpendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ValueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FoodAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NewsAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FoodUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NewsUpdateActivity"
+            android:screenOrientation="portrait" />
+        <!--  蒲公英-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="61464275446cd0f8832f3326d5086768" > <!--由蒲公英提供，稍后创建自己的App id后更新掉-->
+        </meta-data>
+        <!--  蒲公英结束 -->
+    </application>
+
+</manifest>

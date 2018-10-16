@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="colorDivision">#33aaaaaa</color>
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="light_black">#393d3f</color><!--浅黑色 -->
+    <color name="result_view">#b0000000</color>
+    <color name="gray">#aaa</color>
+    <color name="gray2">#8a8a8a</color>
+    <color name="color_333">#333333</color>
+    <color name="light_gray2">#E8E8E8</color><!--深灰色-->
+    <color name="light_gray">#EEEEEE</color><!--淡灰色 -->
+    <color name="gray1">#D3D3D3</color>
+    <color name="my_product_bg_1">#F6F6F6</color>
+    <color name="color_999">#999999</color>
+    <color name="color_666">#666666</color>
+    <color name="viewline_linearlayout_press">#f0f0f0</color>
+    <color name="light_gray_1">#f5f5f5</color>
+    <color name="goods_category_bg">#F2F2F2</color>
+    <color name="my_product_text_2">#A1A1A0</color>
+    <color name="maintab_text_color_unpress">#aaaaaa</color>
+    <color name="color_blue">#0399F0</color>
+    <color name="press_button_color">#0399F0</color>
+    <color name="text_color">#1296db</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="red">#c0ff0400</color>
+    <color name="shop_cart_bg">#aa000000</color>
+    <color name="darker_gray">#aaa</color>
+
+    <color name="tabIndicatorColor">#3F51B5</color>
+    <color name="tabSelectedTextColor">#3F51B5</color>
+    <color name="tabTextColor">#000000</color>
+    <color name="touming">#00000000</color>
+</resources>

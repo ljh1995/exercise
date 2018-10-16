@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    defaultConfig {
+        applicationId "com.example.administrator.ljh_project"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 20
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        //as支持从maven上下依赖库
+        maven { url 'https://maven.google.com' }
+        maven { url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.3+'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.3'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.amitshekhar.android:rx2-android-networking:1.0.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.github.mrengineer13:snackbar:1.1.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.3+'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.2.3+'
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+    compile 'com.android.support:design:25.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:25.0.0-alpha1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //设置蒲公英插件
+    compile 'com.pgyersdk:sdk:2.5.6'
+    compile 'com.youth.banner:banner:1.4.9'  //最新版本
+    compile project(':FlycoAnimation_Lib')
+    compile project(':FlycoDialog_Lib')
+    compile project(':library')
+    compile 'com.android.support:design:25.3.1'
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlycoAnimation_Lib/FlycoAnimation_Lib.iml" filepath="$PROJECT_DIR$/FlycoAnimation_Lib/FlycoAnimation_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoAnimation_Lib1/FlycoAnimation_Lib1.iml" filepath="$PROJECT_DIR$/FlycoAnimation_Lib1/FlycoAnimation_Lib1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" filepath="$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoDialog_Lib1/FlycoDialog_Lib1.iml" filepath="$PROJECT_DIR$/FlycoDialog_Lib1/FlycoDialog_Lib1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ljh_project.iml" filepath="$PROJECT_DIR$/ljh_project.iml" />
+    </modules>
+  </component>
+</project>

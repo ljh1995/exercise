@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/zhucebackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="吃货一族  |  享受生活"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/login_user"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.example.administrator.ljh_project.ui.ClearEditText
+                style="@style/ClearEditText"
+                android:id="@+id/user_login_id"
+                android:hint="@string/please_userid"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_password"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.example.administrator.ljh_project.ui.ClearEditText
+                style="@style/ClearEditText"
+                android:id="@+id/user_login_password"
+                android:hint="@string/please_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_juese"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.example.administrator.ljh_project.ui.ClearEditText
+                android:id="@+id/displayName"
+                style="@style/ClearEditText"
+                android:hint="请输入角色"
+                android:inputType="text"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_zhuce"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_selector"
+            android:text="注册"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

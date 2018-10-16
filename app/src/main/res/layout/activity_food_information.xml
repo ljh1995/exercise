@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/title_main"  />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/foodimage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/nothing"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/foodname"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="嘛味凉皮"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/collect"
+                />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dimens_15dp"
+            android:background="@color/light_gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:src="@drawable/address"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="宁夏大学"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/light_black"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"></View>
+            <ImageView
+                android:id="@+id/telephone"
+                android:layout_weight="2"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:src="@drawable/telephone"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dimens_15dp"
+            android:background="@color/light_gray"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/user1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月售"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/gray"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10dp"
+                android:text="369"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/gray"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:layout_marginLeft="@dimen/dimens_15dp"
+            android:background="@color/light_gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/prize"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/holo_red_light"
+                android:text="￥14"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/buy"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="立即购买"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/dimens_15dp"
+                android:background="@drawable/activity_text_button_bg"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_marginTop="@dimen/dimens_10dp"
+            android:background="@color/light_gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimens_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment"
+                android:textSize="16dp"
+                android:textColor="@color/black"/>
+            <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star"
+            android:layout_marginLeft="@dimen/dimens_10dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="@dimen/dimens_10dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="@dimen/dimens_10dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="@dimen/dimens_10dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dimens_15dp"
+            android:background="@color/light_gray"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+            </android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:id="@+id/have_not_data_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/have_not_data_txt"
+                    android:textSize="@dimen/abc_action_bar_content_inset_material" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

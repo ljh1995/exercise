@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gray1"
+        android:orientation="horizontal"
+        >
+
+        <com.example.administrator.ljh_project.ui.ClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:background="@drawable/login_shape"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:hint="请输入关键字...."
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btndelete_selector"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="发表"
+            android:textSize="16dp"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</LinearLayout>
